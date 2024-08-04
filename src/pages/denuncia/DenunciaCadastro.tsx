@@ -2,6 +2,9 @@ import React, { ChangeEvent, useState } from 'react'
 import Denuncia from '../../models/Denuncia'
 import { cadastrar } from '../../service/Service'
 import ondasvg from '../../assets/wave.svg'
+import { FaArrowLeft } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
 
 function DenunciaCadastro() {
 
@@ -46,8 +49,9 @@ function DenunciaCadastro() {
                 <img src={ondasvg} alt="" />
                 <h1 className='absolute top-0 left-0 text-white text-3xl p-4'>Denuncie um incêndio</h1>
             </div>
-
+           <Link to={'/home'}> <FaArrowLeft className='text-2xl mx-9 my-8'></FaArrowLeft></Link>
             <div className='container flex flex-col items-center justify-center mx-auto mt-8'>
+            
                 <form className="w-3/4 flex flex-col gap-4" onSubmit={cadastrarDenuncia}>
                     <div className='flex flex-col gap-2'>
                         {isVisible && (
