@@ -4,3 +4,23 @@
     z-index: 1;
     color:white
 }
+
+
+.fixed {
+    z-index: 50;
+  }
+  
+  .overlay {
+    z-index: 40;
+  }
+  
+  .transform {
+    transform: translateX(-100%);
+  }
+  
+  .transition-transform {
+    transition: transform 0.3s ease-in-out;
+  }
+
+ 
+  
