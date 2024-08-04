@@ -9,6 +9,9 @@ import Cadastro from './pages/cadastro/Cadastro';
 import Inicio from './pages/inicio/Inicio';
 import Carregamento from './pages/carregamento/Carregamento';
 import DenunciaCadastro from './pages/denuncia/DenunciaCadastro';
+import Perfil from './pages/perfil/Perfil';
+import Sobre from './pages/sobre/Sobre';
+
 //import Footer from './components/footer/Footer';
 
 function App() {
@@ -22,6 +25,8 @@ function App() {
 <Route path="/carregamento" element={<Carregamento />} />
 <Route path="/inicio" element={<Inicio />} />
 <Route path="/" element={<Inicio />} />
+<Route path="/sobre" element={<Sobre />} />
+<Route path="/perfil" element={<Perfil />} />
 <Route path="/cadastro" element={<Cadastro />} />
 </Routes>
     </div>
