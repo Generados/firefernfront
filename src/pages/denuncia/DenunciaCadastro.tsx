@@ -13,9 +13,9 @@ function DenunciaCadastro() {
     const handleCheckBoxChange = () => {
         setIsVisible(!isVisible);
     }
-
     const [data, setData] = useState<any>()
     const [denuncia, setDenuncia] = useState<Denuncia>({} as Denuncia)
+
 
     async function cadastrarDenuncia(event: ChangeEvent<HTMLFormElement>) {
         event.preventDefault()
@@ -42,6 +42,7 @@ function DenunciaCadastro() {
         })
         console.log(JSON.stringify(denuncia))
     }
+
 
     return (
         <>
