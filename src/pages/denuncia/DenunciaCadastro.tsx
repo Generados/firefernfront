@@ -1,6 +1,5 @@
 import React, { ChangeEvent, useState } from 'react'
 import Denuncia from '../../models/Denuncia'
-import axios from 'axios'
 import { cadastrar } from '../../service/Service'
 
 function DenunciaCadastro() {
