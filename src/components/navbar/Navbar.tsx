@@ -1,16 +1,14 @@
-import React from 'react'
+import React, { } from 'react'
 import './Navbar.css'
 import { IoMenu } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+
 import icon  from  '../../assets/icon2.png'
 import { IoMdContact } from "react-icons/io";
 
 
 
-
 function Navbar() {
- 
-  
+
 
   return (
     <>
@@ -20,6 +18,7 @@ function Navbar() {
            <IoMenu className='mx-auto my-auto text-5xl text-[#D9D9D9]'></IoMenu>
            <div><img src={icon} alt="" className=' mt-2'/></div>
             </div>
+            
             
 <div>
 <IoMdContact className='text-white text-5xl'></IoMdContact>

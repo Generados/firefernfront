@@ -48,6 +48,8 @@ function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     console.log(JSON.stringify(denuncia))
 }
 
+
+
   return (
     <>
     <div className='container flex flex-col items-center justify-center mx-auto'>
@@ -79,7 +81,7 @@ function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
                   <label htmlFor="descricao">Descrição</label>
                 <input 
                 type="text" 
-                 className='border-2 border-slate-700 rounded p-2' 
+                 className='border-2 border-slate-700 rounded p-2 ' 
                  name="descricao"
                  value={denuncia.descricao}
                  onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}/>

@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '././pages/home/Home';
 import Cadastro from './pages/cadastro/Cadastro';
 import Inicio from './pages/inicio/Inicio';
+import DenunciaCadastro from './pages/denuncia/DenunciaCadastro';
+import Login from './pages/login/Login';
 //import Footer from './components/footer/Footer';
 
 function App() {
@@ -15,11 +17,13 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <div className='min-h-[80vh]'>
-<Routes>
-<Route path="/inicio" element={<Inicio />} />
-<Route path="/" element={<Home />} />
-<Route path="/cadastro" element={<Cadastro />} />
-</Routes>
+        <Routes>
+        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path='/denunciaCadastro' element={<DenunciaCadastro/>}/>
+        <Route path='/login' element={<Login/>}/>
+        </Routes>
     </div>
 <Footer/> 
 </BrowserRouter>   
