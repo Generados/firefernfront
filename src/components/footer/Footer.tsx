@@ -2,6 +2,7 @@ import React from 'react';
 import iconfooter from '../../assets/icon.png';
 import { TfiAndroid } from "react-icons/tfi";
 import { FaAppStoreIos } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -10,10 +11,10 @@ function Footer() {
         <div className="container flex flex-col items-center py-4">
           <p className='text-xl font-semibold'> FireFern | Copyright </p>
           <div className='flex gap-8 my-4 font-extralight container mx-auto items-center justify-center'>
-            <p>início</p>
-            <p>denúncias</p>
-            <p>alertas</p>
-            <p>mapa</p>
+           <Link to='/home' className='hover:underline'><p>Home</p></Link> 
+           <Link to='/denunciaCadastro' className='hover:underline'><p>Denúncias</p></Link> 
+           <Link to='/cadastro' className='hover:underline'><p>Alertas</p></Link> 
+           <Link to='/sobre' className='hover:underline'><p>Sobre</p></Link> 
           </div>
           <p className='text-lg'>Baixe o nosso app</p>
           <div className='flex gap-4 items-center justify-center py-4'>
