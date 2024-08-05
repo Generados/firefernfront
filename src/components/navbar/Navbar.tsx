@@ -21,13 +21,16 @@ function Navbar() {
             <div><img src={icon} alt="" className='mt-2' /></div>
           </div>
           <div>
-            <IoMdContact className='text-white text-5xl' />
+            <Link to="/perfil"><IoMdContact className='text-white text-5xl' /> </Link>
           </div>
         </div>
       </div>
 
       {/* Menu lateral */}
+
       <div className={`fixed top-0 left-0 h-full w-52 md:w-72 bg-gray-800 opacity-90 text-white z-50 transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
+
+   
         <div className='p-4'>
           <div className='flex justify-between items-center mb-4'>
             <h2 className='bg-gradient-to-r from-orange-700 to-yellow-500 bg-clip-text text-transparent text-xl font-medium'>FireFern</h2>
