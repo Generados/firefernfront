@@ -21,7 +21,7 @@ function DenunciaCadastro() {
         event.preventDefault()
         console.log(data)
         try {
-            await cadastrar('/api/denuncias', data, import.meta.env.VITE_URL_TOKEN)
+            await cadastrar('/api/denuncias', data)
             alert('Denuncia enviada')
         } catch (error) {
             alert("Erro ao enviar denuncia")
@@ -46,14 +46,14 @@ function DenunciaCadastro() {
 
     return (
         <>
-            <div className='relative'>
-                <img src={ondasvg} alt="" />
-                <h1 className='absolute top-0 left-0 text-white text-3xl p-4'>Denuncie um incêndio</h1>
+            <div className='relative '>
+                <img src={ondasvg} alt="" className='' />
+                <h1 className='absolute top-0 left-0 text-white text-3xl p-4 md:text-6xl  md:mt-20 md:mx-auto '>Denuncie um incêndio</h1>
             </div>
            <Link to={'/home'}> <FaArrowLeft className='text-2xl mx-9 my-8'></FaArrowLeft></Link>
             <div className='container flex flex-col items-center justify-center mx-auto mt-8'>
             
-                <form className="w-3/4 flex flex-col gap-4" onSubmit={cadastrarDenuncia}>
+                <form className="w-3/4 flex flex-col gap-4 md:w-1/2" onSubmit={cadastrarDenuncia}>
                     <div className='flex flex-col gap-2'>
                         {isVisible && (
                             <>
@@ -89,7 +89,7 @@ function DenunciaCadastro() {
                             value={denuncia.descricao}
                             onChange={(e: ChangeEvent<HTMLTextAreaElement>) => atualizarEstado(e)}    rows={5}/>
                     </div>
-                    <button type='submit' className='border rounded-xl bg-[#fcbf49] w-1/2 mx-auto p-2 my-6'>Enviar</button>
+                    <button type='submit' className='border rounded-xl bg-[#fcbf49] w-1/2 mx-auto p-2 my-6 md:w-56'>Enviar</button>
                 </form>
             </div>
         </>

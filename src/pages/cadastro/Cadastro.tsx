@@ -91,7 +91,7 @@ function Cadastro() {
 
   return (
     <>
-      <div className="container mx-auto px-4 my-16">
+      <div className="container mx-auto px-6 my-16">
       <Link to={'/home'}>
       <FaArrowLeft className='text-2xl '></FaArrowLeft>
       </Link>
@@ -139,7 +139,7 @@ function Cadastro() {
 
           <div className="flex  sm:flex-row justify-around w-full gap-4">
           
-            <button className="rounded-xl bg-[#F6AA1C] hover:bg-[#538d22] w-80 sm:w-1/2 py-4 flex justify-center font-normal text-xl text-[#FFFFFF]" type='submit'>
+            <button className="rounded-xl bg-[#F6AA1C] hover:bg-[#538d22] w-52 sm:w-1/3 py-4 flex justify-center font-normal text-xl text-[#FFFFFF]" type='submit'>
               Definir Alertas
             </button>
           </div>
