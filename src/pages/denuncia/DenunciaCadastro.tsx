@@ -3,10 +3,17 @@ import Denuncia from '../../models/Denuncia'
 import { cadastrar } from '../../service/Service'
 import ondasvg from '../../assets/wave.svg'
 import { FaArrowLeft } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { toastAlerta } from '../../util/ToastAlert';
 
 
 function DenunciaCadastro() {
+
+    const navigate = useNavigate()
+
+    function retornar(){
+        navigate('/home')
+    }
 
     const [isVisible, setIsVisible] = useState<boolean>(true)
 
@@ -22,9 +29,12 @@ function DenunciaCadastro() {
         console.log(data)
         try {
             await cadastrar('/api/denuncias', data)
-            alert('Denuncia enviada')
+
+            toastAlerta('Denuncia enviada','sucesso')
+            retornar()
+
         } catch (error) {
-            alert("Erro ao enviar denuncia")
+            toastAlerta("Erro ao enviar denuncia", 'erro')
         }
     }
 
