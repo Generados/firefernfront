@@ -13,14 +13,14 @@ function Inicio() {
 </div>
 
 
-<div className='opacity-75'>
+<div className='opacity-75 md:w-96'>
     <img src={bombeiros} alt=""  />
 </div>
 
 
 
 
-<Link to='/home' className='rounded-xl color-button text-center   bg-[#F6AA1C]  hover:bg-[#F6AA1C]   w-1/2 py-2 mb-6  justify-center font-normal text-xl text-[#FFFFFF]'><button>Continuar</button></Link>
+<Link to='/home' className='rounded-xl color-button text-center   bg-[#F6AA1C]  hover:bg-lime-700   w-1/2 py-2 mb-6 md:w-60 justify-center font-normal text-xl text-[#FFFFFF]'><button>Continuar</button></Link>
 
 
     </div>
