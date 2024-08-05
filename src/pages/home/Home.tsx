@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import foguinho from '../../assets/foguinho.png'
-import bola1 from '../../assets/bola1.png'
-import bola2 from '../../assets/bola2.png'
-import bola3 from '../../assets/bola3.png'
-import bola4 from '../../assets/bola4.png'
-import fogoalerta from '../../assets/fogoamarelo.png'
-import fogoModerado from '../../assets/fogolaranja.png'
+import foguinho from '../../assets/foguinho.png';
+import bola1 from '../../assets/bola1.png';
+import bola2 from '../../assets/bola2.png';
+import bola3 from '../../assets/bola3.png';
+import bola4 from '../../assets/bola4.png';
+import fogoalerta from '../../assets/fogoamarelo.png';
+import fogoModerado from '../../assets/fogolaranja.png';
 
 function Home() {
   return (
@@ -14,7 +14,6 @@ function Home() {
       <div className="relative min-h-[80vh] w-screen">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8156207.653273039!2d-62.215880000000006!3d-3.4653050000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e8605342744385%3A0x3d3c6dc1394a7fc7!2zQW1hesO0bmlh!5e0!3m2!1spt-BR!2sbr!4v1722785148432!5m2!1spt-BR!2sbr"
-          allowFullScreen="" 
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-full absolute top-0 left-0 border-0"
