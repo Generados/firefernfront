@@ -21,7 +21,7 @@ function DenunciaCadastro() {
         event.preventDefault()
         console.log(data)
         try {
-            await cadastrar('/api/denuncias', data, import.meta.env.VITE_URL_TOKEN)
+            await cadastrar('/api/denuncias', data)
             alert('Denuncia enviada')
         } catch (error) {
             alert("Erro ao enviar denuncia")

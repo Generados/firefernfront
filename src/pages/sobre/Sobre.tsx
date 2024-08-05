@@ -33,7 +33,7 @@ function Sobre() {
         <h1 className="flex p-3 items-center flex-col font-bold text-red-700">
           Time de Desenvolvedores
         </h1>
-        <div className="mx-10">
+        <div className="mx-10 my-7">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}

@@ -40,11 +40,11 @@ function Home() {
 
       </div>
 
-      <div className="flex  gap-4 container mx-auto p-2 md:justify-center my-10">
-            <Link to='/cadastro' className='border shadow-black shadow-2xl  rounded-xl bg-amber-600 hover:bg-lime-700   w-1/2 md:w-32  p-2 px-4 text-white text-center  '> 
+      <div className="flex  gap-4 container mx-auto justify-center p-2 md:justify-center my-10">
+            <Link to='/cadastro' className='border shadow-black shadow-2xl  rounded-xl bg-amber-600 hover:bg-lime-700   w-40 md:w-32  p-2 px-4 text-white text-center  '> 
               <button type='submit'>Alertas</button>
             </Link> 
-            <Link to='/denunciaCadastro' className='rounded-xl shadow-black shadow-2xl  bg-amber-600  hover:bg-lime-700  w-1/2 md:w-32 p-2  text-white text-center '> 
+            <Link to='/denunciaCadastro' className='rounded-xl shadow-black shadow-2xl  bg-amber-600  hover:bg-lime-700  w-40 md:w-32 p-2  text-white text-center '> 
               <button type='submit'>Denuncie</button>
             </Link> 
           </div>
@@ -55,7 +55,7 @@ function Home() {
 <p className='mt-4 mb-1 font-medium'>Incêndios próximos à sua região</p>
 <div className='grid grid-cols-2 container gap-5 text-center px-4 mb-4 md:grid md:grid-cols-4  md:w-1/2 md:mx-auto'>
 
-  <p className='p-4 bg-[#D32F2F] rounded-xl  shadow-black shadow-2xl '>Apuí</p>
+  <p className='p-4 bg-[#D32F2F] rounded-xl  shadow-black shadow-2xl text-center '>Apuí</p>
   <p className='p-4 bg-[#FF7D00] rounded-xl  shadow-black shadow-2xl text-center '>Manicoré</p>
   <p className='p-4 bg-[#FCCA46] rounded-xl   shadow-black shadow-2xl text-center  '>Colniza</p>
   <p className='p-4 bg-[#D32F2F] rounded-xl   shadow-black shadow-2xl text-center  '>Lábrea</p>
